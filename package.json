@@ -1,0 +1,22 @@
+{
+  "name": "claude-ai-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A TypeScript AI agent powered by the Claude SDK and a custom Anthropic base URL.",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3"
+  }
+}
