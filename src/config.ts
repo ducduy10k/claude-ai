@@ -39,6 +39,6 @@ export const config = {
   model: process.env.ANTHROPIC_MODEL?.trim() || "claude-sonnet-4-6",
   timeoutMs: positiveInteger(process.env.API_TIMEOUT_MS, 3_000_000),
   customHeaders: parseHeaders(process.env.ANTHROPIC_CUSTOM_HEADERS),
-  maxTurns: positiveInteger(process.env.AGENT_MAX_TURNS, 20),
+  maxTurns: positiveInteger(process.env.AGENT_MAX_TURNS, 80),
   maxTokens: positiveInteger(process.env.CLAUDE_CODE_MAX_OUTPUT_TOKENS, 128_000),
 };
